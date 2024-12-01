@@ -1,0 +1,36 @@
+@media (min-width: 800px) {
+    header {
+        background-image: url('/bg-main-desktop.png'), url('/bg-pattern-1.svg');
+        background-position: -33vw -46vh, 79vw -3vh;
+        padding-bottom: 16.5rem;
+    }
+
+    .main_slate {
+        height: 600px;
+        background-image: url('../bg-pattern-2.svg');
+        background-position: 23vw 0vh;
+
+    }
+
+    .main_slate .illustration-app {
+        left: 5rem;
+        height: 642px;
+    }
+
+    main .card {
+        top: 6rem;
+        right: 11%;
+    }
+
+
+    footer {
+        margin-top: 10em;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+    }
+
+}

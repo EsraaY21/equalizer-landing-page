@@ -1,0 +1,53 @@
+@media (min-width: 500px) {
+    header {
+        background-image: url('/bg-main-tablet.png'), url('/bg-pattern-1.svg');
+        background-position: -34vw -32vh, 65vw -3vh;
+        padding-bottom: 16.5rem;
+    }
+
+    h1 {
+        max-width: 15ch;
+    }
+
+    header p {
+        max-width: 47ch;
+    }
+
+    .main_slate {
+        margin-top: 0;
+        background-image: url('../bg-pattern-2.svg');
+        background-position: 0vw 0vh;
+        width: 90%;
+        max-width: 1120px;
+        margin-inline: auto;
+        border-radius: 1rem;
+    }
+
+    .main_slate .illustration-app {
+        left: 2.6rem;
+        transform: translate(0%, -28%);
+    }
+
+    main .card {
+        padding: 3rem;
+        position: absolute;
+        top: 2rem;
+        width: auto;
+        right: 12%;
+        border-radius: 1rem;
+    }
+
+    footer {
+        margin-top: 20em;
+    }
+
+    footer .flex_icons_text {
+        display: flex;
+        gap: 2rem;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between
+    }
+
+}

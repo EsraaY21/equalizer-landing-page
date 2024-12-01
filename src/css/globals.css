@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+    --slate: #191826;
+    --white: #FCFAF9;
+    --yellow: #FFB964;
+    --orange: #FA7453;
+    --cyan: #66E2DC
+}
+
+
+body,
+* {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--slate);
+}
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin-inline: auto;
+}
+
+.text-1 {
+    font-weight: 700;
+    font-size: clamp(2.5rem, 6vw, 5.5rem);
+    line-height: 100%;
+    letter-spacing: -1px;
+}
+
+.text-2 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.text-3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: 0px;
+}
+
+.text-4 {
+    font-weight: 400;
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.text-5 {
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.text-6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0px;
+}
+
+.btn {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+
+.bg-slate {
+    background-color: var(--slate);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.text-slate {
+    color: var(--slate);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.logo {
+    height: 2rem;
+    object-fit: contain;
+}
+
+/* Header ****************** */
+
+header {
+    padding: 4rem 0rem;
+    background-image: url('/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position: 2vw -26vh;
+    overflow: hidden;
+}
+
+header .pattern_edge {
+    display: none;
+}
+
+header img {
+    margin-bottom: clamp(4rem, 5vw, 8rem);
+}
+
+
+h1 {
+    max-width: 20ch;
+    margin-bottom: 2.5rem;
+}
+
+header p {
+    max-width: 60ch;
+}
+
+/* Main ****************** */
+.main_slate {
+    width: 100%;
+    height: 23.75rem;
+    position: relative;
+    margin-top: 6.875rem;
+    background-image: url('../bg-pattern-2.svg');
+    background-repeat: no-repeat;
+    background-position: 8vw 0vh;
+}
+
+.main_slate .illustration-app {
+    position: absolute;
+    left: 50%;
+    height: 26.8rem;
+    transform: translate(-50%, -28%);
+}
+
+
+main .card {
+    padding-top: 3rem;
+    padding-bottom: 6.9rem;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+
+}
+
+.card h2 {
+    margin-bottom: 1.5rem;
+}
+
+.card p {
+    margin-bottom: 2.5rem;
+    max-width: 34ch;
+}
+
+.card .price {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Footer ********************* */
+footer {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    margin-top: 40rem;
+
+}
+
+footer .container {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .flex_icons_text {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+}

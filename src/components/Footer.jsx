@@ -9,16 +9,20 @@ export default function Footer() {
       <div className="container">
         <img src={logo} alt="Logo" className="logo" />
 
-        <div className="copyrights text-5">
-          <p>All rights reserved © Equalizer 2021</p>
-          <p>Have any problems? Contact us via social media or email us at </p>
-          <p className="fw-bold">equalizer@example.com</p>
-        </div>
+        <div className="flex_icons_text">
+          <div className="copyrights text-5">
+            <p>All rights reserved © Equalizer 2021</p>
+            <p>
+              Have any problems? Contact us via social media or email us at{" "}
+            </p>
+            <p className="fw-bold">equalizer@example.com</p>
+          </div>
 
-        <div className="icons">
-          <img src={iconFacebook} alt="Facebook" />
-          <img src={iconInstagram} alt="Instagram" />
-          <img src={iconTwitter} alt="Twitter" />
+          <div className="icons">
+            <img src={iconFacebook} alt="Facebook" />
+            <img src={iconInstagram} alt="Instagram" />
+            <img src={iconTwitter} alt="Twitter" />
+          </div>
         </div>
       </div>
     </footer>
