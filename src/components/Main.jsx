@@ -1,24 +1,19 @@
 import illustration from "/illustration-app.png";
-import pattern1 from "/bg-pattern-1.svg";
-import pattern2 from "/bg-pattern-2.svg";
-import bgMainDesktop from "/bg-main-desktop.png";
-import bgMainTablet from "/bg-main-tablet.png";
-import bgMainMobile from "/bg-main-mobile.png";
 import iconApple from "/icon-apple.svg";
 import iconAndroid from "/icon-android.svg";
 
 export default function Main() {
   return (
     <main>
-      <div className="container">
-        <div className="flex bg-slate">
-          <img
-            src={illustration}
-            alt="illustration"
-            className="illustration-app"
-          />
+      <div className="bg-slate main_slate">
+        <img
+          src={illustration}
+          alt="illustration"
+          className="illustration-app"
+        />
 
-          <div className="card bg-orange">
+        <div className="card bg-orange">
+          <div className="container">
             <h2 className="text-3">Premium EQ</h2>
             <p className="text-4">
               Get expert-level control with a robust equalizer, volume mixer,

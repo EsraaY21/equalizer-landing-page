@@ -106,6 +106,9 @@ body,
 
 header {
   padding: 4rem 0rem;
+  background-image: url('/bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-position: 2vw -26vh;
 }
 
 
@@ -125,32 +128,32 @@ header p {
 }
 
 /* Main ****************** */
-
-main {
-  padding: 200px 0px;
+.main_slate {
+  width: 100%;
+  height: clamp(23.75rem, 10vw, 37.5rem);
+  position: relative;
+  margin-top: clamp(6.875rem, 7vw, 7.5625rem);
+  background-image: url('../bg-pattern-2.svg');
+  background-repeat: no-repeat;
+  background-position: 8vw 0vh;
 }
 
-main .flex {
-  display: flex;
-  padding: 0px 64px;
-  padding-top: 89px;
-
+.main_slate .illustration-app {
+  position: absolute;
+  left: 50%;
+  height: 430px;
+  transform: translate(-50%, -28%);
+  z-index: 10;
 }
 
-main .illustration-app {
-  flex: 1;
-  width: 50%;
-  height: auto;
-  max-height: 642px;
-  object-fit: contain;
-  margin-top: -121px;
-}
 
 main .card {
-  border-radius: 16px;
-  padding: 56px;
-  flex: 1;
-  width: 50%;
+  padding-top: 3rem;
+  padding-bottom: 6.9rem;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+
 }
 
 .card h2 {
@@ -171,25 +174,10 @@ main .card {
 
 /* Footer ********************* */
 footer {
-  margin-bottom: 80px;
-}
-
-footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  padding: 64px 20px 80px 20px;
 }
 
 .icons {
   display: flex;
   gap: 32px;
-}
-
-@media (max-width: 376px) {
-  header {
-    background-image: url('../../public/bg-main-mobile.png');
-    background-repeat: no-repeat;
-    background-position: 2vw -26vh;
-  }
 }
