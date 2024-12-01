@@ -32,7 +32,7 @@ body,
 
 .text-2 {
   font-weight: 700;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 100%;
   letter-spacing: 0px;
 }
@@ -102,6 +102,11 @@ body,
   margin-bottom: 1rem;
 }
 
+.logo {
+  height: 2rem;
+  object-fit: contain;
+}
+
 /* Header ****************** */
 
 header {
@@ -111,9 +116,7 @@ header {
   background-position: 2vw -26vh;
 }
 
-
 header img {
-  height: 2rem;
   margin-bottom: clamp(4rem, 5vw, 8rem);
 }
 
@@ -141,7 +144,7 @@ header p {
 .main_slate .illustration-app {
   position: absolute;
   left: 50%;
-  height: 430px;
+  height: 26.8rem;
   transform: translate(-50%, -28%);
   z-index: 10;
 }
@@ -157,27 +160,37 @@ main .card {
 }
 
 .card h2 {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .card p {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   max-width: 34ch;
 }
 
 .card .price {
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 /* Footer ********************* */
 footer {
-  padding: 64px 20px 80px 20px;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  margin-top: 40rem;
+
+}
+
+footer .container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .icons {
   display: flex;
-  gap: 32px;
+  gap: 2rem;
 }

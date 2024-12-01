@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="container">
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" className="logo" />
 
         <div className="copyrights text-5">
           <p>All rights reserved © Equalizer 2021</p>

@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <header>
       <div className="container">
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" className="logo" />
 
         <h1 className="text-1">We make your music sound extraordinary</h1>
         <p className="text-4">
