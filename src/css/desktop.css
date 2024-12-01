@@ -5,6 +5,14 @@
         padding-bottom: 16.5rem;
     }
 
+    h1 {
+        max-width: 16ch;
+    }
+
+    header p {
+        max-width: 69ch;
+    }
+
     .main_slate {
         height: 600px;
         background-image: url('../bg-pattern-2.svg');
