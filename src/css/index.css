@@ -15,17 +15,17 @@ body,
 * {
   font-family: "IBM Plex Sans", sans-serif;
   color: var(--slate);
-
 }
 
 .container {
+  width: 90%;
   max-width: 1120px;
   margin-inline: auto;
 }
 
 .text-1 {
   font-weight: 700;
-  font-size: 88px;
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
   line-height: 100%;
   letter-spacing: -1px;
 }
@@ -46,13 +46,13 @@ body,
 
 .text-4 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
   line-height: 150%;
   letter-spacing: 0px;
 }
 
 .text-5 {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   letter-spacing: 0px;
 }
@@ -65,12 +65,12 @@ body,
 }
 
 .btn {
-  padding: 16px;
-  border-radius: 12px;
+  padding: 1rem;
+  border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
 
 }
 
@@ -99,23 +99,25 @@ body,
 }
 
 .mb-4 {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 /* Header ****************** */
 
-header img {
-  height: 32px;
-  margin-bottom: 128px;
+header {
+  padding: 4rem 0rem;
 }
 
-header {
-  padding: 64px 0px;
+
+header img {
+  height: 2rem;
+  margin-bottom: clamp(4rem, 5vw, 8rem);
 }
+
 
 h1 {
   max-width: 20ch;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 header p {
@@ -182,4 +184,12 @@ footer .container {
 .icons {
   display: flex;
   gap: 32px;
+}
+
+@media (max-width: 376px) {
+  header {
+    background-image: url('../../public/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position: 2vw -26vh;
+  }
 }
