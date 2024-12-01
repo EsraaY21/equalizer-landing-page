@@ -4,11 +4,11 @@
 
 
 :root {
-  --slate: hsl(244°, 23%, 12%);
-  --white: hsl(20°, 33%, 98%);
-  --yellow: hsl(33°, 100%, 70%);
-  --orange: hsl(12°, 94%, 65%);
-  --cyan: hsl(177°, 68%, 64%)
+  --slate: #191826;
+  --white: #FCFAF9;
+  --yellow: #FFB964;
+  --orange: #FA7453;
+  --cyan: #66E2DC
 }
 
 body,
@@ -17,7 +17,6 @@ body,
   color: var(--slate);
 
 }
-
 
 .container {
   max-width: 1120px;
@@ -53,11 +52,57 @@ body,
 }
 
 .text-5 {
-  font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0px;
 }
+
+.text-6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0px;
+}
+
+.btn {
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+}
+
+.bg-slate {
+  background-color: var(--slate);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.text-slate {
+  color: var(--slate);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+/* Header ****************** */
 
 header img {
   height: 32px;
@@ -73,6 +118,68 @@ h1 {
   margin-bottom: 40px;
 }
 
-p {
+header p {
   max-width: 60ch;
+}
+
+/* Main ****************** */
+
+main {
+  padding: 200px 0px;
+}
+
+main .flex {
+  display: flex;
+  padding: 0px 64px;
+  padding-top: 89px;
+
+}
+
+main .illustration-app {
+  flex: 1;
+  width: 50%;
+  height: auto;
+  max-height: 642px;
+  object-fit: contain;
+  margin-top: -121px;
+}
+
+main .card {
+  border-radius: 16px;
+  padding: 56px;
+  flex: 1;
+  width: 50%;
+}
+
+.card h2 {
+  margin-bottom: 24px;
+}
+
+.card p {
+  margin-bottom: 40px;
+  max-width: 34ch;
+}
+
+.card .price {
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Footer ********************* */
+footer {
+  margin-bottom: 80px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.icons {
+  display: flex;
+  gap: 32px;
 }
