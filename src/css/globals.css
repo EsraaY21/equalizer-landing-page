@@ -70,8 +70,11 @@ body,
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-
+    cursor: pointer;
+    transition: all .2s ease-in-out;
 }
+
+
 
 .bg-slate {
     background-color: var(--slate);
@@ -203,4 +206,16 @@ footer .flex_icons_text {
 .icons {
     display: flex;
     gap: 2rem;
+}
+
+.btn.bg-slate:hover {
+    background-color: var(--cyan);
+}
+
+.btn:hover span {
+    color: var(--slate);
+}
+
+.btn.bg-white:hover {
+    background-color: var(--yellow);
 }
